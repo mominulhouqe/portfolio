@@ -1,4 +1,5 @@
 import React from 'react';
+import ExamplePdf from './resume.pdf';
 
 const Banner = () => {
   return (
@@ -7,7 +8,7 @@ const Banner = () => {
         <div className="md:flex md:flex-row-reverse md:justify-between items-center">
           <div className="md:w-1/2">
             <img
-              src="https://i.ibb.co/sHhyQkq/mominn-removebg-preview.png"
+              src="https://i.ibb.co/2jQH8fv/Phone-Camera-2022-09-14-13-18-53-267.jpg"
               alt="Profile"
               className="w-96 mx-auto md:max-w-none"
             />
@@ -26,16 +27,19 @@ const Banner = () => {
             </p>
             <div>
               <button className="bg-purple-500 hover:bg-purple-600 text-white font-medium py-3 px-6 rounded-full shadow-lg mr-4">
-                <a href="#">Download CV</a>
+                <a href={ExamplePdf} download className="text-white">
+                  Download CV
+                </a>
               </button>
               <button className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-3 px-6 rounded-full shadow-lg">
-                <a href="#">Contact</a>
+                <a href="#" className="text-gray-800">
+                  Contact
+                </a>
               </button>
             </div>
           </div>
         </div>
       </div>
-     
     </div>
   );
 };
