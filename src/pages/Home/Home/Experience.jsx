@@ -4,7 +4,7 @@ import { FaHeadset, FaBriefcase, FaCheckCircle } from "react-icons/fa";
 const Experience = () => {
   return (
     <div className="relative"> 
-      <div className="flex  absolute right-5 -top-10 shadow-lg justify-center items-center bg-gradient-to-r from-slate-100 to-base-200 py-10 rounded-lg">
+      <div className="flex lg:space-x-5 lg:px-4 absolute lg:right-5 -top-10 shadow-lg justify-center items-center bg-gradient-to-r from-slate-100 to-base-200 py-10 rounded-lg">
         <div className="flex items-center mb-6 lg:mb-0">
           <span className="text-5xl text-blue-500 ">
             <FaBriefcase />
