@@ -5,32 +5,45 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
     const items = [
         {
-            name: 'Toys World',
-            image: 'https://i.ibb.co/7j2vvHr/download-1.png'
+            name: 'Language Lerning',
+            image: 'https://i.ibb.co/7j2vvHr/download-1.png',
+            live: 'https://language-club-a06e8.web.app/',
+            source: 'https://github.com/mominulhouqe/Learning-Language'
         },
         {
             name: 'News Paper',
-            image: 'https://i.ibb.co/HrTsq20/download-2.png'
+            image: 'https://i.ibb.co/HrTsq20/download-2.png',
+            live: 'https://newspaper-d6a09.web.app/category/0',
+            source: 'https://github.com/mominulhouqe/dragon-newspaper'
         },
         {
             name: 'Quiz Hero',
-            image: 'https://i.ibb.co/nBVm3V9/download-4.png'
+            image: 'https://i.ibb.co/nBVm3V9/download-4.png',
+            live: 'https://lovely-tiramisu-27d49c.netlify.app/',
+            source: 'https://github.com/mominulhouqe/Quiz-App'
         },
         {
             name: 'The Cheif',
-            image: 'https://i.ibb.co/vxSmN3j/download.png'
+            image: 'https://i.ibb.co/vxSmN3j/download.png',
+            live: 'https://chif-master.web.app/',
+            source: 'https://github.com/mominulhouqe/cheif-master'
         },
         {
             name: 'Job Frags',
-            image: 'https://i.ibb.co/xgL7sWc/download-3.png'
+            image: 'https://i.ibb.co/xgL7sWc/download-3.png',
+            live: 'https://willowy-tartufo-23b198.netlify.app/',
+            source: 'https://github.com/mominulhouqe/Job-Hunting'
         },
         {
             name: 'The Bike',
-            image: 'https://i.ibb.co/M60SJWL/download-5.png'
+            image: 'https://i.ibb.co/M60SJWL/download-5.png',
+            live: 'https://mominulhouqe.github.io/Biker-Zone/',
+            source: 'https://github.com/mominulhouqe/Biker-Zone'
         },
     ];
 
@@ -38,7 +51,7 @@ const Projects = () => {
         <div>
             <div className='flex flex-wrap  gap-5 items-center justify-center container mx-auto'>
                 {items.map((item) => (
-                    <Card key={item.name} className='w-96' sx={{ maxWidth: 345 }}>
+                    <Card key={item.name} className='shadow-2xl' sx={{ maxWidth: 345 }}>
                         <CardMedia
                             component="img"
                             alt={item.name}
@@ -55,8 +68,11 @@ const Projects = () => {
                             </Typography>
                         </CardContent>
                         <CardActions>
-                            <Button size="small">Share</Button>
-                            <Button size="small">Learn More</Button>
+                            <Link target='_blank' to={item.live}>
+                                <Button size="small" >Live Site</Button></Link>
+                            <Link target='_blank' to={item.source}>
+                            <Button  size="small">Source Code </Button>
+                            </Link>
                         </CardActions>
                     </Card>
                 ))}
