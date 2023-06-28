@@ -1,5 +1,6 @@
 import React from 'react';
 import ExamplePdf from './resume.pdf';
+import { TypeAnimation } from 'react-type-animation';
 
 const Banner = () => {
   return (
@@ -20,7 +21,22 @@ const Banner = () => {
             <h1 className="text-white text-4xl md:text-6xl font-bold leading-tight mb-4">
               Mominul Houqe
             </h1>
-            <h4 className="text-gray-400 text-lg md:text-xl mb-6">MERN Stack Developer</h4>
+
+            <TypeAnimation
+              sequence={[
+                'MERN Stack Developer',
+                1000,
+                'Frontend Developer',
+                1000,
+                'FullStack Developer',
+                1000,
+              ]}
+              speed={50}
+              style={{ fontSize: '1.5em' }}
+              repeat={Infinity}
+              className="text-gray-400 text-lg md:text-xl mb-6"
+            />
+
             <p className="text-gray-400 leading-relaxed mb-8">
               Shot what able cold new the see hold. Friendly as an betrayed formerly he.
               Morning because as to society behaved moments.
