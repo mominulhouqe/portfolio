@@ -3,7 +3,7 @@ import { FaHeadset, FaBriefcase, FaCheckCircle } from "react-icons/fa";
 
 const Experience = () => {
   return (
-    <div className="relative w-full mx-80">
+    <div className="relative w-full mx-80"> 
       <div className="flex absolute -top-10 shadow-lg justify-center items-center bg-gradient-to-r from-slate-100 to-base-200 p-10 rounded-lg ">
         <div className="flex items-center">
           <span className="text-5xl text-blue-500 mr-4">

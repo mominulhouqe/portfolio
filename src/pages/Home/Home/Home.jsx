@@ -4,6 +4,7 @@ import { Outlet } from 'react-router-dom';
 import Projects from './Projects';
 import Banner from './Banner';
 import Experience from './Experience';
+import Services from './Services';
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
             {Outlet}
             <Banner />
             <Experience />
+            <Services />
           <Projects />
         </div>
     );
