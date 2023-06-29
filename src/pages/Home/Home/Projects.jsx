@@ -6,6 +6,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Link } from 'react-router-dom';
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 const Projects = () => {
     const items = [
@@ -48,8 +49,13 @@ const Projects = () => {
     ];
 
     return (
-        <div>
-            <div className='flex flex-wrap  gap-5 items-center justify-center container mx-auto'>
+        <div className='bg-[#FDF8F7]'>
+            <div className='text-center my-12'>
+                <h1 className='font-semibold text-yellow-500 text-2xl'>Portfolio</h1>
+                <h1 className='font-bold mb-5 text-4xl'>My Amazing Work</h1>
+                <hr />
+            </div>
+            <div className='flex flex-wrap gap-5 items-center justify-center container mx-auto'>
                 {items.map((item) => (
                     <Card key={item.name} className='shadow-2xl' sx={{ maxWidth: 345 }}>
                         <CardMedia
@@ -69,9 +75,36 @@ const Projects = () => {
                         </CardContent>
                         <CardActions>
                             <Link target='_blank' to={item.live}>
-                                <Button size="small" >Live Site</Button></Link>
+                                <Button
+                                    size="small"
+                                    variant="contained"
+                                    startIcon={<FaExternalLinkAlt />}
+                                    sx={{
+                                        backgroundColor: '#3f51b5',
+                                        color: '#fff',
+                                        '&:hover': {
+                                            backgroundColor: '#2c3e99',
+                                        },
+                                    }}
+                                >
+                                    Live Site
+                                </Button>
+                            </Link>
                             <Link target='_blank' to={item.source}>
-                            <Button  size="small">Source Code </Button>
+                                <Button
+                                    size="small"
+                                    variant="contained"
+                                    startIcon={<FaGithub />}
+                                    sx={{
+                                        backgroundColor: '#f44336',
+                                        color: '#fff',
+                                        '&:hover': {
+                                            backgroundColor: '#d32f2f',
+                                        },
+                                    }}
+                                >
+                                    Source Code
+                                </Button>
                             </Link>
                         </CardActions>
                     </Card>

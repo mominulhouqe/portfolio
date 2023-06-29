@@ -8,9 +8,10 @@ const Skills = () => {
    <div className='bg-[#FDF8F7]'>
      <div className=" container mx-auto">
       <div className="text-center">
-        <h1 className="text-2xl font-bold mb-4">Why Choose Me</h1>
-        <h1 className="text-4xl font-bold">My Experience Area</h1>
-      </div>
+        <h1 className="font-semibold text-yellow-500 text-2xl">Why Choose Me</h1>
+        <h1 className="text-4xl font-bold mb-5">My Experience Area</h1>
+     <hr />
+      </div> 
 
       <div className="flex gap-10 justify-center mt-8">
         <div className="w-1/2">
