@@ -4,9 +4,10 @@ import Avatar from '@mui/material/Avatar';
 
 const Feedback = () => {
   return (
-    <div className="bg-gray-100 py-8">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-3xl font-bold text-center mb-8">Clients Are Satisfied With Our Work</h1>
+    <div className="bg-[#FDF8F7] py-8">
+        <h1 className="text-3xl font-bold text-center mb-8">Clients Are Satisfied With Our Work </h1> <hr />
+      <div className="max-w-3xl mx-auto px-4 mt-2 sm:px-6 lg:px-8">
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <Slide direction="left">
             <div className="bg-white rounded-lg shadow p-6">

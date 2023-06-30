@@ -8,6 +8,7 @@ import Services from './Services';
 import Skills from './Skills';
 import Feedback from './Feedback';
 import BlogSection from './BlogSection';
+import Footer from './Footer';
 
 const Home = () => {
     return (
@@ -21,6 +22,7 @@ const Home = () => {
           <Projects />
           <Feedback />
           <BlogSection />
+          <Footer />
         </div>
     );
 };
