@@ -9,6 +9,7 @@ import Skills from './Skills';
 import Feedback from './Feedback';
 import BlogSection from './BlogSection';
 import Footer from './Footer';
+import Contact from './Contact';
 
 const Home = () => {
     return (
@@ -22,6 +23,7 @@ const Home = () => {
           <Projects />
           <Feedback />
           <BlogSection />
+          <Contact />
           <Footer />
         </div>
     );
