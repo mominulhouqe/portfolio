@@ -45,7 +45,7 @@ const Contact = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="bg-white rounded-lg shadow-md p-6">
             <Fade triggerOnce={true}>
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">Send us a message</h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Send me a message</h3>
               <form onSubmit={handleFormSubmit}>
                 <div className="mb-4">
                   <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
@@ -128,6 +128,12 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <div className="w-full mt-8">
+          <p className="text-center text-gray-500">Contact me for more information</p>
+          <button className="block mx-auto mt-4 px-6 py-2 text-white font-bold bg-blue-500 rounded-full hover:bg-blue-600 transition-colors duration-300">
+            Get in Touch
+          </button>
+        </div>
     </div>
   );
 };
