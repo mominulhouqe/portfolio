@@ -8,9 +8,14 @@ const Contact = () => {
   const [message, setMessage] = useState('');
   const [isSending, setIsSending] = useState(false);
   const [isSent, setIsSent] = useState(false);
+  const [error, setError] = useState('');
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
+
+    if (!validateForm()) {
+      return;
+    }
 
     setIsSending(true);
 
@@ -29,13 +34,35 @@ const Contact = () => {
         setEmail('');
         setMessage('');
       } else {
-        console.error('Email sending failed.');
+        throw new Error('Email sending failed.');
       }
     } catch (error) {
       console.error('Email sending failed.', error);
+      setError('Failed to send the message. Please try again later.');
     }
 
     setIsSending(false);
+  };
+
+  const validateForm = () => {
+    if (!name || !email || !message) {
+      setError('Please fill in all fields.');
+      return false;
+    }
+
+    if (!isValidEmail(email)) {
+      setError('Please enter a valid email address.');
+      return false;
+    }
+
+    setError('');
+    return true;
+  };
+
+  const isValidEmail = (email) => {
+    // Use a regular expression or a validation library to validate the email format
+    // Return true if the email is valid, false otherwise
+    return /\S+@\S+\.\S+/.test(email);
   };
 
   return (
@@ -101,6 +128,7 @@ const Contact = () => {
                 >
                   {isSending ? 'Sending...' : 'Send Message'}
                 </button>
+                {error && <p className="text-red-600">{error}</p>}
                 {isSent && <p className="text-green-600">Message sent successfully!</p>}
               </form>
             </Fade>
@@ -129,11 +157,11 @@ const Contact = () => {
         </div>
       </div>
       <div className="w-full mt-8">
-          <p className="text-center text-gray-500">Contact me for more information</p>
-          <button className="block mx-auto mt-4 px-6 py-2 text-white font-bold bg-blue-500 rounded-full hover:bg-blue-600 transition-colors duration-300">
-            Get in Touch
-          </button>
-        </div>
+        <p className="text-center text-gray-500">Contact me for more information</p>
+        <button className="block mx-auto mt-4 px-6 py-2 text-white font-bold bg-blue-500 rounded-full hover:bg-blue-600 transition-colors duration-300">
+          Get in Touch
+        </button>
+      </div>
     </div>
   );
 };
