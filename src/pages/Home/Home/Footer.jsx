@@ -9,7 +9,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-gray-900 text-white py-10">
-      <div className="container mx-auto flex flex-col items-center">
+      <div className="container px-4 mx-auto flex flex-col items-center">
         <div className="flex space-x-4 mb-8">
           <Fade direction="up" triggerOnce>
             <a
