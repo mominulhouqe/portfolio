@@ -20,11 +20,11 @@ const Home = () => {
             <Experience />
             <Services />
             <Skills />
-          <Projects />
-          <Feedback />
-          <BlogSection />
-          <Contact />
-          <Footer />
+            <Projects />
+            <Feedback />
+            <BlogSection />
+            <Contact />
+            <Footer />
         </div>
     );
 };
