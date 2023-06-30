@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Navigation } from "swiper";
+import { Autoplay, Pagination, Navigation, EffectFade } from "swiper";
 import { FaHome, FaCode, FaPalette, FaWeibo } from "react-icons/fa";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -26,7 +26,8 @@ const Services = () => {
           clickable: true,
         }}
         navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
+        modules={[Autoplay, Pagination, Navigation, EffectFade]}
+        effect="fade"
         className="mySwiper mx-auto"
       >
         <SwiperSlide>
@@ -34,9 +35,11 @@ const Services = () => {
             <FaWeibo className="text-5xl text-blue-500 mb-4" />
             <h1 className="text-xl font-bold mb-2">Web Developer</h1>
             <p className="text-gray-600">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Dignissimos, nam.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, nam.
             </p>
+            <button className="mt-4 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md">
+              Learn More
+            </button>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -44,9 +47,11 @@ const Services = () => {
             <FaCode className="text-5xl text-blue-500 mb-4" />
             <h1 className="text-xl font-bold mb-2">Web Design</h1>
             <p className="text-gray-600">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Dignissimos, nam.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, nam.
             </p>
+            <button className="mt-4 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md">
+              Learn More
+            </button>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -54,9 +59,11 @@ const Services = () => {
             <FaPalette className="text-5xl text-blue-500 mb-4" />
             <h1 className="text-xl font-bold mb-2">UX Design</h1>
             <p className="text-gray-600">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Dignissimos, nam.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, nam.
             </p>
+            <button className="mt-4 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md">
+              Learn More
+            </button>
           </div>
         </SwiperSlide>
       </Swiper>

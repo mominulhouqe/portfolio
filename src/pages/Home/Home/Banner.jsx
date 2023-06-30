@@ -4,7 +4,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 const Banner = () => {
   return (
-    <div className="bg-gray-800 py-16 md:py-32">
+    <div className="relative bg-gray-800 py-16 md:py-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="md:flex md:flex-row-reverse md:justify-between items-center">
           <div className="md:w-1/2">

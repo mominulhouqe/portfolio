@@ -6,7 +6,7 @@ import ProgressBar from '@ramonak/react-progress-bar';
 const Skills = () => {
   return (
    <div className='bg-[#FDF8F7]'>
-     <div className=" container mx-auto">
+     <div className=" container mx-auto px-4">
       <div className="text-center">
         <h1 className="font-semibold text-yellow-500 text-2xl">Why Choose Me</h1>
         <h1 className="text-4xl font-bold mb-5">My Experience Area</h1>
