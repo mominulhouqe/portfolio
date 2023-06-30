@@ -37,7 +37,7 @@ const Services = () => {
             <p className="text-gray-600">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, nam.
             </p>
-            <button className="mt-4 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md">
+            <button className="mt-4 btn btn-primary text-white px-4 py-2 rounded-md">
               Learn More
             </button>
           </div>
@@ -49,7 +49,7 @@ const Services = () => {
             <p className="text-gray-600">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, nam.
             </p>
-            <button className="mt-4 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md">
+            <button className="mt-4 btn btn-primary text-white px-4 py-2 rounded-md">
               Learn More
             </button>
           </div>
@@ -61,7 +61,7 @@ const Services = () => {
             <p className="text-gray-600">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, nam.
             </p>
-            <button className="mt-4 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md">
+            <button className="mt-4 btn btn-primary text-white px-4 py-2 rounded-md">
               Learn More
             </button>
           </div>

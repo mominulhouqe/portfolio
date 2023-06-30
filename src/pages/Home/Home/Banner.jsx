@@ -42,7 +42,7 @@ const Banner = () => {
               Morning because as to society behaved moments.
             </p>
             <div>
-              <button className="bg-purple-500 hover:bg-purple-600 text-white font-medium py-3 px-6 rounded-full shadow-lg mr-4">
+              <button className="btn btn-primary text-white font-medium py-3 px-6 rounded-full shadow-lg mr-4">
                 <a href={ExamplePdf} download className="text-white">
                   Download CV
                 </a>

@@ -122,10 +122,11 @@ const Contact = () => {
                   ></textarea>
                 </div>
                 <button
-                  className="bg-purple-500 hover:bg-purple-600 text-white font-medium py-3 px-6 rounded-full shadow-lg mr-4"
+                  className="btn btn-primary text-white font-medium py-3 px-6 rounded-full shadow-lg mr-4"
                   type="submit"
                   disabled={isSending}
                 >
+                  <AiOutlineSend />
                   {isSending ? 'Sending...' : 'Send Message'}
                 </button>
                 {error && <p className="text-red-600">{error}</p>}
