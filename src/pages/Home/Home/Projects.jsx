@@ -1,4 +1,5 @@
 import React from 'react';
+import { Slide } from 'react-awesome-reveal';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -57,57 +58,59 @@ const Projects = () => {
             </div>
             <div className='flex flex-wrap gap-5 items-center justify-center container mx-auto'>
                 {items.map((item) => (
-                    <Card key={item.name} className='shadow-2xl' sx={{ maxWidth: 345 }}>
-                        <CardMedia
-                            component="img"
-                            alt={item.name}
-                            height="140"
-                            image={item.image}
-                        />
-                        <CardContent>
-                            <Typography gutterBottom variant="h5" component="div">
-                                {item.name}
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                                Lizards are a widespread group of squamate reptiles, with over 6,000
-                                species, ranging across all continents except Antarctica
-                            </Typography>
-                        </CardContent>
-                        <CardActions>
-                            <Link target='_blank' to={item.live}>
-                                <Button
-                                    size="small"
-                                    variant="contained"
-                                    startIcon={<FaExternalLinkAlt />}
-                                    sx={{
-                                        backgroundColor: '#3f51b5',
-                                        color: '#fff',
-                                        '&:hover': {
-                                            backgroundColor: '#2c3e99',
-                                        },
-                                    }}
-                                >
-                                    Live Site
-                                </Button>
-                            </Link>
-                            <Link target='_blank' to={item.source}>
-                                <Button
-                                    size="small"
-                                    variant="contained"
-                                    startIcon={<FaGithub />}
-                                    sx={{
-                                        backgroundColor: '#f44336',
-                                        color: '#fff',
-                                        '&:hover': {
-                                            backgroundColor: '#d32f2f',
-                                        },
-                                    }}
-                                >
-                                    Source Code
-                                </Button>
-                            </Link>
-                        </CardActions>
-                    </Card>
+                    <Slide key={item.name} direction="up">
+                        <Card className='shadow-2xl' sx={{ maxWidth: 345 }}>
+                            <CardMedia
+                                component="img"
+                                alt={item.name}
+                                height="140"
+                                image={item.image}
+                            />
+                            <CardContent>
+                                <Typography gutterBottom variant="h5" component="div">
+                                    {item.name}
+                                </Typography>
+                                <Typography variant="body2" color="text.secondary">
+                                    Lizards are a widespread group of squamate reptiles, with over 6,000
+                                    species, ranging across all continents except Antarctica
+                                </Typography>
+                            </CardContent>
+                            <CardActions>
+                                <Link target='_blank' to={item.live}>
+                                    <Button
+                                        size="small"
+                                        variant="contained"
+                                        startIcon={<FaExternalLinkAlt />}
+                                        sx={{
+                                            backgroundColor: '#3f51b5',
+                                            color: '#fff',
+                                            '&:hover': {
+                                                backgroundColor: '#2c3e99',
+                                            },
+                                        }}
+                                    >
+                                        Live Site
+                                    </Button>
+                                </Link>
+                                <Link target='_blank' to={item.source}>
+                                    <Button
+                                        size="small"
+                                        variant="contained"
+                                        startIcon={<FaGithub />}
+                                        sx={{
+                                            backgroundColor: '#f44336',
+                                            color: '#fff',
+                                            '&:hover': {
+                                                backgroundColor: '#d32f2f',
+                                            },
+                                        }}
+                                    >
+                                        Source Code
+                                    </Button>
+                                </Link>
+                            </CardActions>
+                        </Card>
+                    </Slide>
                 ))}
             </div>
         </div>
