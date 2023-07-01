@@ -12,7 +12,7 @@ const Services = () => {
   return (
     <div className="bg-[#FDF8F7] py-16 md:py-32">
       <div className="text-center mb-8">
-        <h1 className="text-4xl font-bold">Services</h1>
+        <h1 className="text-4xl text-yellow-500 font-bold">Services</h1>
         <p className="text-gray-600">I Provide a Wide Range of Digital Services</p>
       </div>
       <Swiper

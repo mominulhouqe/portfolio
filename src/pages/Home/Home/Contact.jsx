@@ -17,11 +17,11 @@ const Contact = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
+    <div className='bg-[#FDF8F7] '>
+      <div className="container mx-auto px-4 py-8">
+      <h2 className="text-4xl text-yellow-500 text-center font-bold mb-4">Contact Us</h2>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-6 justify-center'>
         <div>
-
           <form ref={form} onSubmit={sendEmail} className="max-w-md mx-auto bg-white rounded-lg shadow-md p-6">
             <div className="mb-4">
               <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
@@ -88,6 +88,7 @@ const Contact = () => {
           </Fade>
         </div>
       </div>
+    </div>
     </div>
   );
 };
