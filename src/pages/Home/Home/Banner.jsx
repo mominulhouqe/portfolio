@@ -1,5 +1,5 @@
 import React from 'react';
-import ExamplePdf from './resumes.pdf';
+import ExamplePdf from './resume.pdf';
 import { TypeAnimation } from 'react-type-animation';
 
 const Banner = () => {
