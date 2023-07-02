@@ -20,14 +20,14 @@ const Navbar = () => {
         <FaHome className="mr-1" /> Home
       </NavLink>
       <NavLink
-        to="/project"
+        to="/"
         activeClassName="text-white bg-gray-700"
         className="text-gray-300 flex justify-center items-center space-x-5 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium"
       >
         <FaCode className="mr-1" /> Project
       </NavLink>
       <NavLink
-        to="/about"
+        to="/"
         activeClassName="text-white bg-gray-700"
         className="text-gray-300 flex justify-center items-center space-x-5 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
       >
