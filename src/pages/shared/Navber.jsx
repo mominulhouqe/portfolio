@@ -1,7 +1,14 @@
-import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
-import { FaBars, FaTimes, FaHome, FaBriefcase, FaUser, FaCode } from 'react-icons/fa';
-import './Navber.css'
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+import {
+  FaBars,
+  FaTimes,
+  FaHome,
+  FaBriefcase,
+  FaUser,
+  FaCode,
+} from "react-icons/fa";
+import "./Navber.css";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -44,18 +51,23 @@ const Navbar = () => {
   );
 
   return (
-    <nav className="bg-slate-800 py-2 fixed top-0 left-0 w-full z-50">    
+    <nav className="bg-slate-800 py-2 sticky top-0 z-50 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <NavLink exact to="/" className="text-white font-bold w-12 rounded-full text-lg">
+            <NavLink
+              exact
+              to="/"
+              className="text-white font-bold w-12 rounded-full text-lg"
+            >
               <img
                 src="https://st3.depositphotos.com/5366154/13886/i/1600/depositphotos_138866570-stock-photo-fire-letter-m-of-burning.jpg"
-                alt="" className="logo"
+                alt=""
+                className="logo"
               />
             </NavLink>
           </div>
-          
+
           <div className="hidden md:block">
             <div className="ml-4 flex items-center space-x-4">{menuItems}</div>
           </div>
@@ -65,7 +77,11 @@ const Navbar = () => {
               className="text-gray-400 hover:text-white focus:outline-none focus:text-white"
               onClick={toggleMenu}
             >
-              {isOpen ? <FaTimes className="h-6 w-6" /> : <FaBars className="h-6 w-6" />}
+              {isOpen ? (
+                <FaTimes className="h-6 w-6" />
+              ) : (
+                <FaBars className="h-6 w-6" />
+              )}
             </button>
           </div>
         </div>

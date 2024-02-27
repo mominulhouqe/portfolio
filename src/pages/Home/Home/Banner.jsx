@@ -1,20 +1,20 @@
-import React from 'react';
-import ExamplePdf from './resume.pdf';
-import { TypeAnimation } from 'react-type-animation';
-
+import React from "react";
+import ExamplePdf from "./Mominul_resume.pdf";
+import { TypeAnimation } from "react-type-animation";
+import img1 from "../../../assets/momin.png";
 const Banner = () => {
   return (
-    <div className="bg-gray-800 py-16 md:py-32">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="md:flex md:flex-row-reverse md:justify-between items-center">
-          <div className="md:w-1/2">
+    <div className="bg-gray-800 py-16">
+      <div className="container mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 place-items-center">
+          <div className="max-w-md w-full mx-auto">
             <img
-              src="https://i.ibb.co/2jQH8fv/Phone-Camera-2022-09-14-13-18-53-267.jpg"
+              src={img1}
               alt="Profile"
-              className="w-96 rounded-full mx-auto md:max-w-none"
+              className="w-full h-full rounded-full mx-auto md:max-w-none"
             />
           </div>
-          <div className="md:w-1/2 text-center md:text-left">
+          <div className="text-center md:text-left">
             <h2 className="text-white text-2xl md:text-4xl font-bold leading-tight">
               Hi, I'm
             </h2>
@@ -24,22 +24,22 @@ const Banner = () => {
 
             <TypeAnimation
               sequence={[
-                'MERN Stack Developer',
+                "MERN Stack Developer",
                 1000,
-                'Frontend Developer',
+                "Frontend Developer",
                 1000,
-                'FullStack Developer',
+                "FullStack Developer",
                 1000,
               ]}
               speed={50}
-              style={{ fontSize: '1.5em' }}
+              style={{ fontSize: "1.5em" }}
               repeat={Infinity}
               className="text-gray-400 text-lg md:text-xl mb-6"
             />
 
             <p className="text-gray-400 leading-relaxed mb-8">
-              Shot what able cold new the see hold. Friendly as an betrayed formerly he.
-              Morning because as to society behaved moments.
+              Shot what able cold new the see hold. Friendly as an betrayed
+              formerly he. Morning because as to society behaved moments.
             </p>
             <div>
               <button className="btn btn-primary text-white font-medium py-3 px-6 rounded-full shadow-lg mr-4">

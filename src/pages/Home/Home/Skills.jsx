@@ -50,25 +50,25 @@ const Skills = () => {
           <div className="mb-8">
             <h3 className="text-lg font-bold">React</h3>
             <FaReact className="text-4xl mb-2 text-blue-500" />
-            <ProgressBar completed={85} />
+            <ProgressBar completed={75} />
           </div>
 
           <div className="mb-8">
             <h3 className="text-lg font-bold">Node.js</h3>
             <DiNodejs className="text-4xl mb-2 text-blue-500" />
-            <ProgressBar completed={65} />
+            <ProgressBar completed={55} />
           </div>
 
           <div className="mb-8">
             <h3 className="text-lg font-bold">Express.js</h3>
             <DiExtjs className="text-4xl mb-2 text-blue-500" />
-            <ProgressBar completed={60} />
+            <ProgressBar completed={40} />
           </div>
 
           <div className="mb-8">
             <h3 className="text-lg font-bold">MongoDB</h3>
             <DiMongodb className="text-4xl mb-2 text-blue-500" />
-            <ProgressBar completed={50} />
+            <ProgressBar completed={40} />
           </div>
         </div>
       </div>
